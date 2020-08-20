@@ -1,0 +1,645 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+html{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item{
+    height:100%;
+    
+    background:no-repeat center center scroll;
+    -webkit-background-size:cover;
+    
+}
+body{
+     -webkit-background-color: #ffffff;
+    background-size:100% 100%;
+    background-attachment: fixed;
+   
+}
+#redondo{
+  border-radius: 20px;
+}
+hr{
+    width:100%;
+    border: solid 1px #ffffff;
+    color:#ffffff;
+}
+
+#enla{
+    text-align:center;
+}
+
+
+h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contenedor2{
+ padding: 1em;
+  background-color:#990099;
+  color:#990099;
+   opacity:14;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+   color: white;
+   margin: 30px auto;
+   font-weight: bold;
+  font-style: italic;
+}
+
+
+.contenedor4{
+ padding: 1em;
+   -webkit-color:#c408a8;
+   opacity:14;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+   color: white;
+   margin: 30px auto;
+   font-weight: bold;
+  font-style: italic;
+}
+
+.container{
+      background-size:100% 100%;
+    background-attachment: fixed;
+    width:100%;
+   height:100%;
+   margin-top:50px;
+}
+
+.contenedor4 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.centro{
+    margin-top:-50px;
+    border:2px solid #ddd;
+}
+#titulo{
+     margin-top:-520px;
+}
+nav ul {
+  list-style: none;
+}
+nav > ul > li {
+  float: left;
+}
+nav ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+nav ul li a {
+  display: inline-block;
+  width: 200px;
+  color: #990073;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+nav ul li a:hover {
+   background-color: #990073;
+}
+/** Segundo Nivel **/
+nav ul ul {
+  position: absolute;
+  top:100%;
+  background-color: rgba(153,0,153);
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li:hover  {
+ 
+}
+
+.redes-sociales{
+    text-align: center;
+}
+.redes-sociales a{
+    color: #000000;
+    font-size: 2em;
+    margin-right: 20px;
+}
+.redes-sociales a:last-child{
+    margin-right: 0;
+}
+.informacion-evento{
+    text-align: center;
+    color: #000000;
+}
+
+.button.transparente{
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+.button.transparente:hover{
+    background-color: #fe4918;
+    border-color: #fe4918;
+    color: #ffffff;
+}
+h1{
+    letter-spacing:10px;
+}
+a:hover{
+box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.4);
+transition: .3s;
+}
+
+.contenedor_tarjeta {
+	margin: 20px;
+}
+
+.contenedor_tarjeta a {
+	display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+	transform: perspective(600px) rotateY(180deg);
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+	/* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+	/*filter:blur(2px);*/
+}
+
+figure {
+	width: 300px;
+	height: 350px;
+	margin:0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	/* Nota:
+		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+	*/
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+}
+
+figure .frontal {
+	display: block;
+	background: #000;
+
+	/* Podemos ocultar la imagen al da la vuelta si lo queremos */
+	/*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+   
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+    
+	background: rgba(223,234,241,0.7);
+	background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+	background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera{
+    
+	background: rgba(251,232,202,0.7);
+	background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+	background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera{
+	background: rgba(95,58,53,0.7);
+	background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+	background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+figure .trasera .titulo {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+}
+
+figure .trasera hr {
+	height: 2px;
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+figure .trasera p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  footer{
+    background: blue;
+  }
+}
+
+
+.mapWrapper {
+    position: relative;
+    /*
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667
+    which is 66.6666667% */
+    padding-bottom: 66.6666667%;
+    height: 0;
+
+}
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* This sets an overlay element that covers the map and helps prevent people from zooming the map while scrolling. */
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:100%;
+   z-index: 1;
+}
+.chat-container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 340px;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	z-index: 999;
+}
+
+.chat-button{
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+	user-select: none;
+	padding: 4px 0;
+	background-color: #337AB7;
+	text-aling: center;
+	color: #fff;
+}
+
+.chat-content{
+	margin: 0;
+	padding: 0;
+	display:none;
+	background-color: #fff;
+}
+
+footer{
+    background-color: #353535;
+    padding-top: 40px;
+}
+footer .contenedor > div{
+    color: #ffffff;
+    padding: 0px 20px;
+    font-size: 12px;
+    
+}
+
+@media screen and (max-width: 700px) {
+  
+  footer{
+    background: blue;
+  }
+}
+
+@media only screen and (min-width:992px){
+    footer .contenedor > div{
+        width: 33.3%;
+        float: left;
+
+    }
+}
+footer h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 20px;
+
+}
+footer h3 span{
+    color: #fe4918;
+}
+footer .footer-servicios li{
+    margin-bottom: 10px;
+}
+footer .footer-servicios li a{
+    border:none;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+
+footer .footer-servicios li a:hover{
+    color: #fe4918;
+}
+footer nav.redes-sociales{
+    text-align: left;
+}
+footer nav.redes-sociales a i{
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+footer nav.redes-sociales a i:hover{
+    color: #fe4918;
+}
+p.copyright{
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+
+}
+.redes-sociales{
+    text-align: center;
+}
+.redes-sociales a{
+    color: #000000;
+    font-size: 2em;
+    margin-right: 20px;
+}
+.redes-sociales a:last-child{
+    margin-right: 0;
+}
+.informacion-evento{
+    text-align: center;
+    color: #000000;
+}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#enla{
+    text-align:center;
+}
+
+
+.frontal{
+    width:500px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#titulo{
+     margin-top:-320px;
+}
+.parrafo{
+   color:#ffffff;
+}
+
+.contenedorcomen{
+     padding: 1em;
+	background-color:#990099;
+   width:85%;
+   height:100%;
+   border: solid 2px #000;
+   color: #cccccc;
+   margin: 30px auto;
+   font-weight: bold;
+	font-style: italic;
+}
+.contenedor4{
+     padding: 1em;
+   background-color:#990099;
+   opacity:14;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+   color: white;
+   margin: 30px auto;
+   font-weight: bold;
+  font-style: italic;
+}
+.container{
+     padding: 1em;
+	background-color:#990099;
+   opacity:14;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+   border: solid 1px #000;
+   color: white;
+   margin: 30px auto;
+   font-weight: bold;
+	font-style: italic;
+}
+.contenedor {
+    max-width: 1200px;
+	margin:50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color:#990099;
+	
+	justify-content: center;
+   padding: 1em;
+   width:100%;
+   height:100%;
+   color: white;
+   margin: 30px auto;
+   font-weight: bold;
+	font-style: italic;
+}
+
+.contenedortabla{
+     padding: 1em;
+	background-color:#990099;
+   width:95%;
+  
+   border: solid 2px #000;
+   color: #cccccc;
+   margin: 30px auto;
+   font-weight: bold;
+	font-style: italic;
+}
+
+.contenedortabla1{
+     padding: 1em;
+	background-color:#990099;
+   width:95%;
+  
+   border: solid 2px #000;
+   color: #cccccc;
+   margin: 30px auto;
+   font-weight: bold;
+	font-style: italic;
+}
+
+
+.contenedor_tarjeta {
+	margin: 20px;
+}
+
+.contenedor_tarjeta a {
+	display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+	transform: perspective(600px) rotateY(180deg);
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+	/* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+	/*filter:blur(2px);*/
+}
+
+figure {
+	width: 300px;
+	height: 350px;
+	margin:0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	/* Nota:
+		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+	*/
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+}
+textarea{
+width: 65%;
+}
+figure .frontal {
+	display: block;
+	background: #000;
+
+	/* Podemos ocultar la imagen al da la vuelta si lo queremos */
+	/*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+	background: rgba(223,234,241,0.7);
+	background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+	background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera{
+	background: rgba(251,232,202,0.7);
+	background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+	background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera{
+	background: rgba(95,58,53,0.7);
+	background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+	background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+figure .trasera .titulo {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+}
+
+figure .trasera hr {
+	height: 2px;
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+figure .trasera p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 22px;
+	font-size: 14px;
+}
+
